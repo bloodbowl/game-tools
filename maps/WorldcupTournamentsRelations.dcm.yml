@@ -1,0 +1,24 @@
+WorldcupTournamentsRelations:
+    type: entity
+    table: WorldCup_Tournaments_Relations
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idworldcupTournaments:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idWorldCup_Tournaments
+        idworldcupTournamentsParent:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idWorldCup_Tournaments_Parent
+    lifecycleCallbacks: {  }

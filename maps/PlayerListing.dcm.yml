@@ -1,0 +1,236 @@
+PlayerListing:
+    type: entity
+    table: Player_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerNames:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Names
+        strname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strName
+        idplayerTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Types
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+        idteamListingPrevious:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing_Previous
+        idraces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRaces
+        iplayercolor:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPlayerColor
+        iskinscalepercent:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iSkinScalePercent
+        iskinmeshvariant:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iSkinMeshVariant
+        iskintexturevariant:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iSkinTextureVariant
+        fageing:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fAgeing
+        inumber:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iNumber
+        characteristicsFmovementallowance:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fMovementAllowance
+        characteristicsFstrength:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fStrength
+        characteristicsFagility:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fAgility
+        characteristicsFarmourvalue:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fArmourValue
+        idplayerLevels:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Levels
+        iexperience:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iExperience
+        idequipmentListingHelmet:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Listing_Helmet
+        idequipmentListingPauldron:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Listing_Pauldron
+        idequipmentListingGauntlet:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Listing_Gauntlet
+        idequipmentListingBoot:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Listing_Boot
+        durabilityIhelmet:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Durability_iHelmet
+        durabilityIpauldron:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Durability_iPauldron
+        durabilityIgauntlet:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Durability_iGauntlet
+        durabilityIboot:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Durability_iBoot
+        isalary:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iSalary
+        contractIduration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contract_iDuration
+        contractIseasonremaining:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Contract_iSeasonRemaining
+        idnegotiationConditionTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idNegotiation_Condition_Types
+        negotiationIremainingtries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Negotiation_iRemainingTries
+        negotiationIconditiondemand:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Negotiation_iConditionDemand
+        ivalue:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iValue
+        imatchsuspended:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMatchSuspended
+        inblevelsup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iNbLevelsUp
+        levelupIrollresult:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LevelUp_iRollResult
+        levelupIrollresult2:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LevelUp_iRollResult2
+        levelupBdouble:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: LevelUp_bDouble
+        bgenerated:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bGenerated
+        bstar:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bStar
+        bedited:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bEdited
+        bdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bDead
+        strlevelup:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strLevelUp
+    lifecycleCallbacks: {  }

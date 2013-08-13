@@ -1,0 +1,124 @@
+StatisticsPlayers:
+    type: entity
+    table: Statistics_Players
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Listing
+        imatchplayed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMatchPlayed
+        imvp:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMVP
+        inflictedIpasses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iPasses
+        inflictedIcatches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iCatches
+        inflictedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iInterceptions
+        inflictedItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iTouchdowns
+        inflictedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iCasualties
+        inflictedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iTackles
+        inflictedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iKO
+        inflictedIstuns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iStuns
+        inflictedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iInjuries
+        inflictedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iDead
+        inflictedImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iMetersRunning
+        inflictedImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Inflicted_iMetersPassing
+        sustainedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iInterceptions
+        sustainedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iCasualties
+        sustainedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iTackles
+        sustainedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iKO
+        sustainedIstuns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iStuns
+        sustainedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iInjuries
+        sustainedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Sustained_iDead
+    lifecycleCallbacks: {  }

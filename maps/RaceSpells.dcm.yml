@@ -1,0 +1,34 @@
+RaceSpells:
+    type: entity
+    table: Race_Spells
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idraces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRaces
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        idstringsLocalizedInfo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized_Info
+        iprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPrice
+    lifecycleCallbacks: {  }

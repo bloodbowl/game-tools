@@ -1,0 +1,74 @@
+StringsFormatted:
+    type: entity
+    table: Strings_Formatted
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        label:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Label
+        french:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: French
+        english:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: English
+        italian:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Italian
+        german:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: German
+        russian:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Russian
+        spanish:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Spanish
+        czech:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Czech
+        hungarian:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Hungarian
+        polish:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Polish
+    lifecycleCallbacks: {  }

@@ -1,0 +1,19 @@
+Stadiums:
+    type: entity
+    table: Stadiums
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+    lifecycleCallbacks: {  }

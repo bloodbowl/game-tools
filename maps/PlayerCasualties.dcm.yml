@@ -1,0 +1,24 @@
+PlayerCasualties:
+    type: entity
+    table: Player_Casualties
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Listing
+        idplayerCasualtyTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Casualty_Types
+    lifecycleCallbacks: {  }

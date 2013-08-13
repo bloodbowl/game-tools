@@ -1,0 +1,41 @@
+Races:
+    type: entity
+    table: Races
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        dataConstant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DATA_CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        idstringsLocalizedInfo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized_Info
+        strname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strName
+        irerollprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRerollPrice
+    lifecycleCallbacks: {  }

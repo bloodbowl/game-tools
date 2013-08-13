@@ -1,0 +1,30 @@
+AiCharacterRoles:
+    type: entity
+    table: AI_Character_Roles
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idaiCharacterRoleTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idAI_Character_Role_Types
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+    lifecycleCallbacks: {  }

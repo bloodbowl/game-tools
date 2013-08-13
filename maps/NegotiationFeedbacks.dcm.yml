@@ -1,0 +1,24 @@
+NegotiationFeedbacks:
+    type: entity
+    table: Negotiation_Feedbacks
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idnegotiationFeedbackTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idNegotiation_Feedback_Types
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+    lifecycleCallbacks: {  }

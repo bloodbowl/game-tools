@@ -1,0 +1,49 @@
+TrophyListing:
+    type: entity
+    table: Trophy_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idmatchListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idMatch_Listing
+        idcalendar:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCalendar
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+        iseason:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iSeason
+        idruleTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRule_Types
+        igroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iGroup
+        idcampaignListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCampaign_Listing
+    lifecycleCallbacks: {  }

@@ -1,0 +1,96 @@
+EquipmentListing:
+    type: entity
+    table: Equipment_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        strname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strName
+        idraces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRaces
+        idplayerTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Types
+        idequipmentTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Types
+        idequipmentVisuals:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idEquipment_Visuals
+        iprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPrice
+        idplayerLevels:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Levels
+        idurability:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iDurability
+        idcharacteristicsBonus:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCharacteristics_Bonus
+        idcharacteristicsMalus:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCharacteristics_Malus
+        iquantifierBonus:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iQuantifier_Bonus
+        iquantifierMalus:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iQuantifier_Malus
+        buseable:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bUseable
+        fbuffproba:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fBuffProba
+        bcustom:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bCustom
+    lifecycleCallbacks: {  }

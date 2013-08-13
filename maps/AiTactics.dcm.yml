@@ -1,0 +1,42 @@
+AiTactics:
+    type: entity
+    table: AI_Tactics
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+        ilistAiCharacterRoleTypes:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: iList_AI_Character_Role_Types
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        strname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strName
+    lifecycleCallbacks: {  }

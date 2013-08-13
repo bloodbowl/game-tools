@@ -1,0 +1,30 @@
+PlayerTrainings:
+    type: entity
+    table: Player_Trainings
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerListing:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idPlayer_Listing
+        idcharacteristics:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCharacteristics
+        fmodifier:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fModifier
+    lifecycleCallbacks: {  }

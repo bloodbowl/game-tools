@@ -1,0 +1,24 @@
+WorldcupGroupsRaces:
+    type: entity
+    table: WorldCup_Groups_Races
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idworldcupGroups:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idWorldCup_Groups
+        idraces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRaces
+    lifecycleCallbacks: {  }

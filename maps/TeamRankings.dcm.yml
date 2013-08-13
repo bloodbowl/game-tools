@@ -1,0 +1,64 @@
+TeamRankings:
+    type: entity
+    table: Team_Rankings
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+        idruleTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRule_Types
+        iseason:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iSeason
+        igroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iGroup
+        ipoints:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPoints
+        iranking:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRanking
+        iwins:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iWins
+        idraws:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iDraws
+        ilosses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iLosses
+        iteamvalue:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iTeamValue
+    lifecycleCallbacks: {  }

@@ -1,0 +1,59 @@
+Characteristics:
+    type: entity
+    table: Characteristics
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        idstringsLocalizedAbbreviation:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized_Abbreviation
+        fequivalence:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fEquivalence
+        trainingFmaxmodifier:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Training_fMaxModifier
+        trainingFbasemodifier:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Training_fBaseModifier
+        trainingIaimodifier:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Training_iAIModifier
+        fmaxvalue:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fMaxValue
+    lifecycleCallbacks: {  }

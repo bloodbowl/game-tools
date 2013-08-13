@@ -1,0 +1,25 @@
+AiFormations:
+    type: entity
+    table: AI_Formations
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        ilist:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: iList
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+    lifecycleCallbacks: {  }

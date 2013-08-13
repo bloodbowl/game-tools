@@ -1,0 +1,72 @@
+Coach:
+    type: entity
+    table: Coach
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        strname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strName
+        strtagVoice:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strTag_Voice
+        strtagHead:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strTag_Head
+        statisticsImatchplayed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_iMatchPlayed
+        statisticsIwins:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_iWins
+        statisticsIdraws:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_iDraws
+        statisticsIloss:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_iLoss
+        statisticsItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_iTouchdowns
+        statisticsInflictedIexclusions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_Inflicted_iExclusions
+        statisticsTakenIexclusions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_Taken_iExclusions
+        statisticsTakenItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Statistics_Taken_iTouchdowns
+    lifecycleCallbacks: {  }

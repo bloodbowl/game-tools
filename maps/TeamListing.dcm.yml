@@ -1,0 +1,113 @@
+TeamListing:
+    type: entity
+    table: Team_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        strname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strName
+        idraces:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idRaces
+        strlogo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strLogo
+        iteamcolor:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iTeamColor
+        strleitmotiv:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: strLeitmotiv
+        strbackground:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: strBackground
+        ivalue:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iValue
+        ipopularity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPopularity
+        icash:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iCash
+        icheerleaders:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iCheerleaders
+        ibalms:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iBalms
+        bapothecary:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bApothecary
+        irerolls:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRerolls
+        bedited:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bEdited
+        idteamListingFilters:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idTeam_Listing_Filters
+        idstringsFormattedBackground:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted_Background
+        idstringsLocalizedLeitmotiv:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized_Leitmotiv
+        inextpurchase:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iNextPurchase
+        iassistantcoaches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iAssistantCoaches
+    lifecycleCallbacks: {  }

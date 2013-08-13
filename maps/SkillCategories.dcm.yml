@@ -1,0 +1,25 @@
+SkillCategories:
+    type: entity
+    table: Skill_Categories
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+    lifecycleCallbacks: {  }

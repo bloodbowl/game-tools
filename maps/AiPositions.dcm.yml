@@ -1,0 +1,51 @@
+AiPositions:
+    type: entity
+    table: AI_Positions
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idaiTactics:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idAI_Tactics
+        ilistCell:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: iList_Cell
+        ilistIdaiCharacterRoleTypes:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: iList_idAI_Character_Role_Types
+        irosternumber:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRosterNumber
+        attackIdaiCharacterRoles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Attack_idAI_Character_Roles
+        defenseIdaiCharacterRoles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Defense_idAI_Character_Roles
+        priority:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Priority
+    lifecycleCallbacks: {  }

@@ -1,0 +1,243 @@
+RuleListing:
+    type: entity
+    table: Rule_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+        idstringslocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStringsLocalized
+        idstringslocalizedinfo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStringsLocalizedInfo
+        strname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strName
+        brealtime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bRealTime
+        inbteams:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iNbTeams
+        idruleTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRule_Types
+        championshipInbgroups:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iNbGroups
+        championshipInbmatchspergroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iNbMatchsPerGroup
+        cupInbgroups:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Cup_iNbGroups
+        cupInbmatchspergroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Cup_iNbMatchsPerGroup
+        playoffIstartinglevel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Playoff_iStartingLevel
+        playoffIdoubleelimination:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Playoff_iDoubleElimination
+        bchallenge:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bChallenge
+        rewardIwinner:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Reward_iWinner
+        rewardIloser:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Reward_iLoser
+        bsponsor:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bSponsor
+        bbuyexperiencedplayers:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bBuyExperiencedPlayers
+        bdeath:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bDeath
+        bageing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bAgeing
+        bnegociation:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bNegociation
+        bmagic:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bMagic
+        bbribery:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bBribery
+        bdoping:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bDoping
+        coupsBcoupdemain:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Coups_bCoupDeMain
+        coupsBcoupfiesta:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Coups_bCoupFiesta
+        bprematchevent:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bPreMatchEvent
+        maxIcheerleaders:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Max_iCheerleaders
+        maxIbalms:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Max_iBalms
+        maxIrerolls:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Max_iRerolls
+        maxIpopularity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Max_iPopularity
+        maxIexperiencelevel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Max_iExperienceLevel
+        bstarplayers:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bStarPlayers
+        bequipment:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bEquipment
+        bcustomequipment:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bCustomEquipment
+        imatchduration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMatchDuration
+        matchdurationIrt:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: MatchDuration_iRT
+        matchdurationItt:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: MatchDuration_iTT
+        idtrophyNames:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: idTrophy_Names
+        trophyStrname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Trophy_strName
+        idtrophyVisuals:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTrophy_Visuals
+        bextendedinducements:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bExtendedInducements
+        bcontracts:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bContracts
+        btraining:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bTraining
+        bracialscrolls:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bRacialScrolls
+    lifecycleCallbacks: {  }

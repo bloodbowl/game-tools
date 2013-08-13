@@ -1,0 +1,44 @@
+WorldcupGroups:
+    type: entity
+    table: WorldCup_Groups
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idruleTypes:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idRule_Types
+        idworldcupTournaments:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idWorldCup_Tournaments
+        igroupindex:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iGroupIndex
+        iduration:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iDuration
+        inbteams:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iNbTeams
+        inbqualifiedteams:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iNbQualifiedTeams
+    lifecycleCallbacks: {  }

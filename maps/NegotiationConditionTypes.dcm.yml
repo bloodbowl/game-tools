@@ -1,0 +1,25 @@
+NegotiationConditionTypes:
+    type: entity
+    table: Negotiation_Condition_Types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsFormatted:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted
+    lifecycleCallbacks: {  }

@@ -1,0 +1,384 @@
+Calendar:
+    type: entity
+    table: Calendar
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idteamListingAway:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing_Away
+        idteamListingHome:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing_Home
+        championshipIseason:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iSeason
+        championshipIday:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iDay
+        championshipIgroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iGroup
+        championshipIdruleTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_idRule_Types
+        championshipIeliminitationlevel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iEliminitationLevel
+        playoffIeliminationlevel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Playoff_iEliminationLevel
+        playoffBawaygame:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Playoff_bAwayGame
+        awayIscore:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iScore
+        awayIreward:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iReward
+        awayIcashearned:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iCashEarned
+        awayIpossessionball:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iPossessionBall
+        awayOccupationIown:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Occupation_iOwn
+        awayOccupationItheir:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Occupation_iTheir
+        awayImvp:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iMVP
+        awayInflictedIpasses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iPasses
+        awayInflictedIcatches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iCatches
+        awayInflictedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iInterceptions
+        awayInflictedItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iTouchdowns
+        awayInflictedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iCasualties
+        awayInflictedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iTackles
+        awayInflictedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iKO
+        awayInflictedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iInjuries
+        awayInflictedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iDead
+        awayInflictedImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iMetersRunning
+        awayInflictedImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Inflicted_iMetersPassing
+        awaySustainedIpasses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iPasses
+        awaySustainedIcatches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iCatches
+        awaySustainedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iInterceptions
+        awaySustainedItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iTouchdowns
+        awaySustainedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iCasualties
+        awaySustainedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iTackles
+        awaySustainedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iKO
+        awaySustainedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iInjuries
+        awaySustainedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iDead
+        awaySustainedImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iMetersRunning
+        awaySustainedImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_Sustained_iMetersPassing
+        awayImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iMetersRunning
+        awayImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Away_iMetersPassing
+        homeIscore:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iScore
+        homeIreward:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iReward
+        homeIcashearned:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iCashEarned
+        homeIpossessionball:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iPossessionBall
+        homeOccupationIown:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Occupation_iOwn
+        homeOccupationItheir:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Occupation_iTheir
+        homeImvp:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iMVP
+        homeInflictedIpasses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iPasses
+        homeInflictedIcatches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iCatches
+        homeInflictedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iInterceptions
+        homeInflictedItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iTouchdowns
+        homeInflictedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iCasualties
+        homeInflictedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iTackles
+        homeInflictedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iKO
+        homeInflictedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iInjuries
+        homeInflictedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iDead
+        homeInflictedImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iMetersRunning
+        homeInflictedImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Inflicted_iMetersPassing
+        homeSustainedIpasses:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iPasses
+        homeSustainedIcatches:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iCatches
+        homeSustainedIinterceptions:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iInterceptions
+        homeSustainedItouchdowns:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iTouchdowns
+        homeSustainedIcasualties:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iCasualties
+        homeSustainedItackles:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iTackles
+        homeSustainedIko:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iKO
+        homeSustainedIinjuries:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iInjuries
+        homeSustainedIdead:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iDead
+        homeSustainedImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iMetersRunning
+        homeSustainedImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_Sustained_iMetersPassing
+        homeImetersrunning:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iMetersRunning
+        homeImeterspassing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Home_iMetersPassing
+        ispectators:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iSpectators
+        irating:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRating
+        bplayed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bPlayed
+    lifecycleCallbacks: {  }

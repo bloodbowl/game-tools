@@ -1,0 +1,66 @@
+Inducements:
+    type: entity
+    table: Inducements
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idinducementTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idInducement_Types
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        idstringsFormattedInfo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted_Info
+        idstringsFormattedSucceed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted_Succeed
+        idstringsFormattedFailed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted_Failed
+        iprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPrice
+        imaxquantity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMaxQuantity
+        fbonus:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fBonus
+        btargetopponent:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bTargetOpponent
+    lifecycleCallbacks: {  }

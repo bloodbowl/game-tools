@@ -1,0 +1,89 @@
+ReplayNetcommands:
+    type: entity
+    table: Replay_NetCommands
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        iturn:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iTurn
+        iplayerindex:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPlayerIndex
+        itype:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iType
+        ipart1:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart1
+        ipart2:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart2
+        ipart3:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart3
+        ipart4:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart4
+        ipart5:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart5
+        ipart6:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart6
+        ipart7:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart7
+        ipart8:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart8
+        ipart9:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart9
+        ipart10:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart10
+        ipart11:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart11
+        ipart12:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart12
+    lifecycleCallbacks: {  }

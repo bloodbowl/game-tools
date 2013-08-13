@@ -1,0 +1,19 @@
+WorldcupGroupsCurrent:
+    type: entity
+    table: WorldCup_Groups_Current
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idworldcupGroups:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idWorldCup_Groups
+    lifecycleCallbacks: {  }

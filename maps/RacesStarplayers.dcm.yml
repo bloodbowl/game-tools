@@ -1,0 +1,30 @@
+RacesStarplayers:
+    type: entity
+    table: Races_StarPlayers
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idraces:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idRaces
+        idplayerTypes:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idPlayer_Types
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+    lifecycleCallbacks: {  }

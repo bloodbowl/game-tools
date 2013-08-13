@@ -1,0 +1,40 @@
+PlayerLevels:
+    type: entity
+    table: Player_Levels
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        ilevel:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iLevel
+        imaxexperience:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMaxExperience
+        ipreferredcontractduration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPreferredContractDuration
+    lifecycleCallbacks: {  }

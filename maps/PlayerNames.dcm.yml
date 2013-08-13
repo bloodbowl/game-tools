@@ -1,0 +1,78 @@
+PlayerNames:
+    type: entity
+    table: Player_Names
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        french:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: French
+        english:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: English
+        italian:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Italian
+        german:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: German
+        russian:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Russian
+        spanish:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Spanish
+        czech:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Czech
+        hungarian:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Hungarian
+        polish:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Polish
+        idplayerNameTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Name_Types
+        ipart:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPart
+    lifecycleCallbacks: {  }

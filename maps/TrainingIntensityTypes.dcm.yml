@@ -1,0 +1,31 @@
+TrainingIntensityTypes:
+    type: entity
+    table: Training_Intensity_Types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        modifierFprogressspeed:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Modifier_fProgressSpeed
+        modifierFduration:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Modifier_fDuration
+    lifecycleCallbacks: {  }

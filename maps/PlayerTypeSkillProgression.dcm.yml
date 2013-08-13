@@ -1,0 +1,25 @@
+PlayerTypeSkillProgression:
+    type: entity
+    table: Player_Type_Skill_Progression
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Types
+        strskills:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strSkills
+    lifecycleCallbacks: {  }

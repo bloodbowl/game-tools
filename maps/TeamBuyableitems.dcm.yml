@@ -1,0 +1,40 @@
+TeamBuyableitems:
+    type: entity
+    table: Team_BuyableItems
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        iprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPrice
+        imaxquantity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMaxQuantity
+        idstringsFormated:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formated
+    lifecycleCallbacks: {  }

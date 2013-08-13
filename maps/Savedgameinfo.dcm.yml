@@ -1,0 +1,168 @@
+Savedgameinfo:
+    type: entity
+    table: SavedGameInfo
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        strname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strName
+        strsavedate:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strSaveDate
+        strversion:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strVersion
+        championshipIdteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_idTeam_Listing
+        championshipStrteamname:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: Championship_strTeamName
+        championshipIdteamlogo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_idTeamLogo
+        championshipIdruleTypesCurrent:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_idRule_Types_Current
+        championshipIcurrentday:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iCurrentDay
+        championshipIcurrentseason:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iCurrentSeason
+        championshipIteamcash:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iTeamCash
+        championshipIteamvalue:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iTeamValue
+        championshipIteampopularity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Championship_iTeamPopularity
+        campaignIdcampaignListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Campaign_idCampaign_Listing
+        campaignBrealtime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Campaign_bRealTime
+        campaignIteamprestige:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Campaign_iTeamPrestige
+        campaignIcurrentperiod:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Campaign_iCurrentPeriod
+        matchStrsave:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Match_strSave
+        matchIddifficultylevels:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Match_idDifficultyLevels
+        matchIstadium:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Match_iStadium
+        matchBdeathzoneenabled:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Match_bDeathZoneEnabled
+        islot:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iSlot
+        strteamlogo:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strTeamLogo
+        ilogorace:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iLogoRace
+        ilogoindex:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iLogoIndex
+        stravailableraces:
+            type: string
+            nullable: false
+            length: 8
+            fixed: false
+            column: strAvailableRaces
+        iinmatch:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iInMatch
+        irace:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRace
+        storyStrname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: Story_strName
+        storyStrcontext:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            column: Story_strContext
+    lifecycleCallbacks: {  }

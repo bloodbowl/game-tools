@@ -1,0 +1,50 @@
+PlayerBasetypes:
+    type: entity
+    table: Player_BaseTypes
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: CONSTANT
+        experienceIpassingcompletion:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Experience_iPassingCompletion
+        experienceIcasualty:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Experience_iCasualty
+        experienceIinterception:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Experience_iInterception
+        experienceItouchdown:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Experience_iTouchdown
+        experienceImvp:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Experience_iMVP
+        aitrainingIdcharacteristics:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: AITraining_idCharacteristics
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+PlayerInjuryTypes:
+    type: entity
+    table: Player_Injury_Types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idstringslocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStringsLocalized
+        idcharacteristics:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idCharacteristics
+        iprobability:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iProbability
+        dataConstant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DATA_CONSTANT
+    lifecycleCallbacks: {  }

@@ -1,0 +1,29 @@
+WorldcupBestof:
+    type: entity
+    table: WorldCup_BestOf
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idworldcupGroups:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idWorldCup_Groups
+        ibestof:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iBestOf
+        iday:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iDay
+    lifecycleCallbacks: {  }

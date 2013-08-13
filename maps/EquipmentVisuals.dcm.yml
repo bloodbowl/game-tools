@@ -1,0 +1,19 @@
+EquipmentVisuals:
+    type: entity
+    table: Equipment_Visuals
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        iset:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: iSet
+    lifecycleCallbacks: {  }

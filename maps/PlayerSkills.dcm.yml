@@ -1,0 +1,24 @@
+PlayerSkills:
+    type: entity
+    table: Player_Skills
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idplayerListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Listing
+        idskillListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idSkill_Listing
+    lifecycleCallbacks: {  }

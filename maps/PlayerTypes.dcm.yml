@@ -1,0 +1,80 @@
+PlayerTypes:
+    type: entity
+    table: Player_Types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        dataConstant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DATA_CONSTANT
+        idraces:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idRaces
+        idplayerBasetypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_BaseTypes
+        idplayerNameTypes:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idPlayer_Name_Types
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        strname:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strName
+        characteristicsFmovementallowance:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fMovementAllowance
+        characteristicsFstrength:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fStrength
+        characteristicsFagility:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fAgility
+        characteristicsFarmourvalue:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: Characteristics_fArmourValue
+        iprice:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPrice
+        imaxquantity:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMaxQuantity
+    lifecycleCallbacks: {  }

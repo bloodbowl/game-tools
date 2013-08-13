@@ -1,0 +1,59 @@
+TeamSponsors:
+    type: entity
+    table: Team_Sponsors
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idsponsorNames:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idSponsor_Names
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+        irelationship:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRelationship
+        iwinratio:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iWinRatio
+        icurrentwinratio:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iCurrentWinRatio
+        inbfirstinstatistic:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iNbFirstInStatistic
+        idsponsorObjectives:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idSponsor_Objectives
+        iobjective:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iObjective
+        bsigned:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bSigned
+    lifecycleCallbacks: {  }

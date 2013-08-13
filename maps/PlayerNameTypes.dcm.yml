@@ -1,0 +1,30 @@
+PlayerNameTypes:
+    type: entity
+    table: Player_Name_Types
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+        irandomseed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRandomSeed
+        irandomindex:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iRandomIndex
+    lifecycleCallbacks: {  }

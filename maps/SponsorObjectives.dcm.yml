@@ -1,0 +1,35 @@
+SponsorObjectives:
+    type: entity
+    table: Sponsor_Objectives
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        constant:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: CONSTANT
+        idstringsFormatted:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted
+        iobjective:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iObjective
+        iobjectivevalue:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iObjectiveValue
+    lifecycleCallbacks: {  }

@@ -1,0 +1,62 @@
+SkillListing:
+    type: entity
+    table: Skill_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        dataConstant:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DATA_CONSTANT
+        idstringsLocalized:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Localized
+        idstringsFormattedInfo:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idStrings_Formatted_Info
+        idskillCategories:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idSkill_Categories
+        fbonus:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            column: fBonus
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: DESCRIPTION
+        icooldown:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iCooldown
+        iduration:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iDuration
+        aiIweight:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: AI_iWeight
+    lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+WorldcupTournamentsQualifiedteams:
+    type: entity
+    table: WorldCup_Tournaments_QualifiedTeams
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        idworldcupTournaments:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idWorldCup_Tournaments
+        idteamListing:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: idTeam_Listing
+    lifecycleCallbacks: {  }

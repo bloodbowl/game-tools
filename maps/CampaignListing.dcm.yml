@@ -1,0 +1,72 @@
+CampaignListing:
+    type: entity
+    table: Campaign_Listing
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        iperiod:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iPeriod
+        strchampionshiprule:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            column: strChampionshipRule
+        strlogo:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strLogo
+        strspecialrules:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: strSpecialRules
+        idstringsLocalizedName:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idStrings_Localized_Name
+        idstringsFormattedBackground:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: idStrings_Formatted_Background
+        rewardIminprestige:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Reward_iMinPrestige
+        rewardImaxprestige:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: Reward_iMaxPrestige
+        iminimumrequiredprestige:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: iMinimumRequiredPrestige
+        bplayed:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bPlayed
+        bunlocked:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: bUnlocked
+    lifecycleCallbacks: {  }
